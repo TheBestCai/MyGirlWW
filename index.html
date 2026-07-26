@@ -1,3 +1,128 @@
-<h1>王宛是猪</h1>
-<h2>那也是我最喜欢的猪猪</h2>
-<h3>略略略~</h3>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎回来 - SE Rpc</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 背景粒子 -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 左侧品牌区 -->
+        <div class="brand-panel">
+            <div class="brand-content">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h1 class="brand-title">SE Rpc</h1>
+                <p class="brand-desc">
+                    高效、稳定的远程过程调用框架<br>
+                    连接服务，赋能未来
+                </p>
+                <div class="brand-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-rocket"></i>
+                        <span>高性能通信</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>安全可靠</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                        <span>轻松集成</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧登录区 -->
+        <div class="login-panel">
+            <div class="login-content">
+                <div class="login-header">
+                    <h2>欢迎回来</h2>
+                    <p>登录您的账户以继续</p>
+                </div>
+
+                <form class="login-form" id="loginForm">
+                    <!-- 用户名 -->
+                    <div class="input-group">
+                        <label for="username">用户名</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="username" placeholder="请输入用户名" required autocomplete="username">
+                        </div>
+                    </div>
+
+                    <!-- 密码 -->
+                    <div class="input-group">
+                        <label for="password">密码</label>
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" placeholder="请输入密码" required autocomplete="current-password">
+                            <i class="fa-solid fa-eye toggle-password" id="togglePassword" title="显示密码"></i>
+                        </div>
+                    </div>
+
+                    <!-- 额外选项 -->
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember">
+                            <span class="checkmark"></span>
+                            记住我
+                        </label>
+                        <a href="#" class="forgot-link">忘记密码？</a>
+                    </div>
+
+                    <!-- 登录按钮 -->
+                    <button type="submit" class="login-btn" id="loginBtn">
+                        <span class="btn-text">登 录</span>
+                        <span class="btn-loading" style="display:none;">
+                            <i class="fa-solid fa-spinner fa-spin"></i> 登录中...
+                        </span>
+                    </button>
+
+                    <!-- 分割线 -->
+                    <div class="divider">
+                        <span>或通过以下方式</span>
+                    </div>
+
+                    <!-- 社交登录 -->
+                    <div class="social-login">
+                        <button type="button" class="social-btn github" title="GitHub 登录">
+                            <i class="fa-brands fa-github"></i>
+                        </button>
+                        <button type="button" class="social-btn google" title="Google 登录">
+                            <i class="fa-brands fa-google"></i>
+                        </button>
+                        <button type="button" class="social-btn microsoft" title="Microsoft 登录">
+                            <i class="fa-brands fa-microsoft"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- 注册跳转 -->
+                <div class="register-hint">
+                    还没有账户？<a href="#">立即注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
